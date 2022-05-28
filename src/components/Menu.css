@@ -1,0 +1,152 @@
+/* Menu2 */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+p {
+  margin: 0;
+}
+
+.clip-contents {
+  overflow: hidden;
+}
+
+.flex-col-hstart-vstart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-vcenter-hstart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-row-vend {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.menu-2 {
+  position: relative;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1)
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  box-shadow: -10px 0px 70px rgba(0, 0, 0, 0.25);
+  width: 375px;
+  height: 1024px;
+}
+
+.menu {
+  position: absolute;
+  top: 130px;
+  left: 48px;
+  width: 308px;
+  height: 723px;
+}
+
+.txt-809 {
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  width: 239px;
+  height: 27px;
+  word-wrap: break-word;
+  margin-bottom: 54px;
+}
+
+.txt-029 {
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  width: 235px;
+  height: 24px;
+  word-wrap: break-word;
+  margin-bottom: 55px;
+}
+
+.txt-581 {
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  width: 239px;
+  height: 24px;
+  word-wrap: break-word;
+  margin-bottom: 60px;
+}
+
+.dropdown {
+  padding: 0px 93px 69px 0px;
+  margin-bottom: 122px;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+.txt-310 {
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+  margin-right: 19px;
+}
+
+.arrow {
+  border: 2px solid rgba(0, 0, 0, 1);
+  width: 13.36px;
+  height: 6.62px;
+}
+
+.drop-down-2 {
+  padding: 0px 120px 237px 0px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.drop {
+  padding: 0px 0.36px 0px 0px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.txt-456 {
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+  margin-right: 21px;
+}
+
+.arrow {
+  border: 2px solid rgba(0, 0, 0, 1);
+  width: 13.36px;
+  height: 6.62px;
+}
+
+.txt-1067 {
+  position: absolute;
+  top: 27px;
+  left: 312px;
+  font-size: 19.32px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  width: 13px;
+  height: 24px;
+  word-wrap: break-word;
+}

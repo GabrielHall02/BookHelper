@@ -1,6 +1,31 @@
 import React from "react"
 //import NavBar from "./components/NavBar.js"
 import "./style.css"
+import DropDown from "./DropDown"
+
+const items = [
+  {
+    id: 1,
+    value: 'Introduzir documentos',
+  },
+  {
+    id: 2,
+    value: 'Introduzir produtos',
+  },
+  {
+    id: 3,
+    value: 'Apuramento de vendas',
+  },
+  {
+    id: 4,
+    value: 'Extras',
+  },
+
+  {
+    id: 3,
+    value: 'Módulo Cliente',
+  },
+];
 
 export default function NavBar() {
   return (
@@ -15,7 +40,7 @@ export default function NavBar() {
         <p className="txt-396">BookHelper</p>
       </div>
       <div className="menu-btn">
-        <p className="txt-659">Menu</p>
+        <DropDown className = "aa" title="Menu" items={items}/>
       </div>
     </div>
   </div>

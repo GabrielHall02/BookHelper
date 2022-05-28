@@ -1,8 +1,13 @@
 import React from 'react'
+import NavBar from "../components/NavBar.js" 
+import InputSection from "../components/InputSection/InputSection.js"
 
 const InputDocs = () => {
   return (
-    <div>InputDocs</div>
+    <>
+      <NavBar />
+      <InputSection />
+    </>
   )
 }
 

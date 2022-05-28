@@ -1,9 +1,10 @@
 import React from 'react'
 import NavBar from "../components/NavBar.js" 
 import HeroSection from "../components/HeroSection.js";
-import GetStarted from "../components/GetStarted.js";
+import GetStarted from "../components/GetStarted/GetStarted.js";
 
 const Home = () => {
+  
   return (
     <>
     <NavBar />
