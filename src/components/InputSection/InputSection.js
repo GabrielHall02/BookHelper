@@ -1,26 +1,17 @@
 import React, { useState, useRef } from "react"
 import { useFilePicker } from 'use-file-picker';
 import "./style.css"
-import {add} from "./adicionar.png"
+import add from "./Add-btn.svg"
 
 export default function GetStarted() {
-
-    const [
-        openFileSelector,
-        { filesContent, loading, errors, plainFiles }
-      ] = useFilePicker({
-        multiple: true,
-        // accept: '.ics,.pdf',
-        accept: ['.xlsx'],
+    const [hide, sethide] = useState(true)
+    const [openFileSelector,{loading, filesContent}] = useFilePicker({
+        accept: '.xlsx',
       });
-    
-      if (errors.length) return <p>Error!</p>;
     
       if (loading) {
         return <div>Loading...</div>;
       }
-    
-
 
     return(
     <div className="wrapper">
@@ -37,20 +28,18 @@ export default function GetStarted() {
         </div>
       </div>
       <div className="importar flex-row-vcenter">
-        <div className="escolher-ficheiro flex-row-vcenter" onClick={useFilePicker}>
-          <img
-            src={add}
-            alt="Not Found"
-            className="vector-4"
-          />
-          <p className="txt-489">Escolher ficheiro</p>
+        <div className="escolher-ficheiro flex-row-vcenter" onClick={() => {openFileSelector();sethide(s => !s);}}>
+        <img src={add} alt="Not Found" className="vector-4" />
+        {hide ? <p className="txt-489">Escolher ficheiro</p> : filesContent.map((file)=>(<p className="txt-489">{file.name}</p>))}
+            
+          
         </div>
         <div className="botao-importar">
           <p className="txt-5107">Importar</p>
         </div>
       </div>
     </div>
-    <div className="excel-preview flex-col">
+    {!hide ? <div className="excel-preview flex-col">
       <div className="group-814 flex-row">
         <p className="txt-4104">ISBN</p>
         <p className="txt-677">Title</p>
@@ -75,7 +64,7 @@ export default function GetStarted() {
         <p className="txt-610">5</p>
         <p className="txt-246">10.38</p>
       </div>
-    </div>
+    </div> : null}
   </div>
   </div>
   )
