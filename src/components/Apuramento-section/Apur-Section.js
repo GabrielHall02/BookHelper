@@ -1,5 +1,6 @@
 import React from "react"
 import "./style.css"
+import TextInputM from "../TextInputM/TextInputM"
 
 
 export default function Apur_Section() {
@@ -8,16 +9,12 @@ export default function Apur_Section() {
         <div className="group-972 flex-col">
           <p className="txt-051 flex-hcenter">Apuramento de Vendas</p>
           
-          <div className="apuramento flex-col-hstart-vstart">
-            <input className="text-input" type="text" placeholder="Introduzir fornecedor">
-              
-            </input>
+          <TextInputM text={"Introduzir fornecedor"} />
             <div className="btn-m-export">
               <p className="txt-664">Exportar</p>
             </div>
             
           </div>
         </div>
-      </div>
     )
   }

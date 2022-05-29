@@ -3,6 +3,7 @@ import React, {useState} from "react"
 import { Link } from 'react-router-dom';
 import "./style.css"
 import DropDown from "./DropDown"
+import { Icon } from '@iconify/react';
 
 
 export default function NavBar() {
@@ -27,11 +28,7 @@ export default function NavBar() {
     <div className="group-964 flex-row">
       <div className="logo flex-row">
         
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/aj42ydq29ct-143%3A27?alt=media&token=c7c4a190-a966-435e-bd13-10f44499d931"
-          alt="Not Found"
-          className="open-book-1"
-        />
+      <Icon icon="icon-park-solid:love-and-help" color="black" width="24" height="24" />
         <Link to='/' style={{ textDecoration: 'none' }} className="txt-396" onClick={closeMobileMenu}>
           BookHelper
         </Link>

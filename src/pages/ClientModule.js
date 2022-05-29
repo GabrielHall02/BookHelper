@@ -1,8 +1,13 @@
 import React from 'react'
+import NavBar from '../components/NavBar.js'
+import Container from "../components/ContainerModule/ContainerModule.js"
 
 const ClientModule = () => {
   return (
-    <div>ClientModule</div>
+    <>
+    <NavBar/>
+    <Container/>
+    </>
   )
 }
 

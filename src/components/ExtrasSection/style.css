@@ -27,22 +27,6 @@
     justify-content: center;
   }
 
-  .heading2{
-    font-size: 32px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    color: rgb(65, 65, 65);
-    text-align: center;
-    word-wrap: break-word;
-    margin-bottom: 55px;
-  }
 
-  .header1{
-    font-size: 40px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
-    text-align: center;
-    word-wrap: break-word;
-    margin-bottom: 55px;
-  }
+
+  

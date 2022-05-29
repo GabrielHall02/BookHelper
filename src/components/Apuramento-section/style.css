@@ -73,21 +73,6 @@ p {
   word-wrap: break-word;
 }
 
-.text-input {
-  padding: 18px 224px 18px 24px;
-  box-sizing: border-box;
-  border-radius: 40px;
-  background-color: rgba(240, 242, 239, 1);
-  width: 517px;
-  height: 64px;
-  font-size: 23px;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  color: rgba(142, 142, 142, 1);    
-  word-wrap: break-word;
-  border: none;
-}
-
 .input-ficheiro {
   width: 261px;
   height: 100%;

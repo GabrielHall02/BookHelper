@@ -1,6 +1,6 @@
 import React from "react"
 import "./style.css"
-export default function GetStarted() {
+export default function ExcelPreview() {
 
 
 return(

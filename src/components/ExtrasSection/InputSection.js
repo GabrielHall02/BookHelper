@@ -1,18 +1,20 @@
 import React from "react"
 import "./style.css"
+import TextInputM from "../TextInputM/TextInputM"
+import Header1 from "../Header1/Header1"
+import SubHeader1 from "../Subheader1/Subheader1"
+
 
 export default function InputSection() {
     return(
+<>
 <div className="container">
     <div className="flex-col">
-        <p className="header1 flex-hcenter">Extras</p>
-        <p className="heading2 flex-hcenter">Editoras de um fornecedor</p>
+        <Header1 text={"Extras"}/>
+        <SubHeader1 text={"Editoras de um fornecedor"} />
     </div>
-    <div className="flex-col-center-vstart">
-        <input className="text-input" type="text" placeholder="Introduzir fornecedor"></input>
-    </div>
-
+        <TextInputM text={"Introduzir fornecedor"} />
 </div>
-
+</>
     )
 }
