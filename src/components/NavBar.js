@@ -32,59 +32,22 @@ export default function NavBar() {
           alt="Not Found"
           className="open-book-1"
         />
-        <Link to='/' className="txt-396" onClick={closeMobileMenu}>
+        <Link to='/' style={{ textDecoration: 'none' }} className="txt-396" onClick={closeMobileMenu}>
           BookHelper
         </Link>
       </div>
       
       <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <p>menu</p>
-          <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              Home
-            </Link>
-          </li>
-          <li
-            className='nav-item'
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
+          <li className='nav-item'
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}>
             <Link
-              to='/services'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Services <i className='fas fa-caret-down' />
+            to='/'>
+              Menu
             </Link>
             {dropdown && <DropDown />}
           </li>
-          <li className='nav-item'>
-            <Link
-              to='/products'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Products
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link
-              to='/contact-us'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='/sign-up'
-              className='nav-links-mobile'
-              onClick={closeMobileMenu}
-            >
-              Sign Up
-            </Link>
-          </li>
+          
         </ul>
     </div>
   </div>

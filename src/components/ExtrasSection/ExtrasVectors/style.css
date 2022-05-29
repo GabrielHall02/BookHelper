@@ -1,0 +1,32 @@
+.vectors-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: -10;
+    position: relative;
+    margin-top: 300px;
+  }
+
+.extras-vector1 {
+    background: url(Vector5.svg);
+    display: block;
+    width: 110%;
+    height: 686px;
+    position: absolute;
+    bottom: 0px;
+    filter: drop-shadow(3px 5px 30px rgb(0 0 0 / 0.5));
+    background-size: cover;
+
+  }
+  .extras-vector2 {
+    background: url(Vector6.svg);
+    display: block;
+    width: 110%;
+    height: 576px;
+    position: absolute;
+    bottom: 0px;
+    filter: drop-shadow(3px 5px 20px rgb(0 0 0 / 0.5));
+    background-size:cover;
+
+  }
+

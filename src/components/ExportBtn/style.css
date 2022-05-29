@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+p {
+  margin: 0;
+}
+
+.flex-hcenter {
+  justify-content: center;
+}
+
+.export-btn {
+  transition: ease-in-out 0.2s;
+  padding: 12px 88px 9px 87px;
+  box-sizing: border-box;
+  border-radius: 35px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2.3px solid rgba(162, 162, 162, 1);
+  width: 420px;
+  height: 59px;
+  cursor: pointer;
+}
+
+.export-btn:hover{
+  border: 4px solid rgba(126, 126, 126, 1);
+  transition: ease-in-out 0.2s;
+
+}
+
+.export-btn:hover > .txt-439{
+  text-align: center;
+  font-weight: 500;
+  color: rgba(126, 126, 126, 1);
+  transition: ease-in-out 0.2s;
+
+}
+
+.txt-439 {
+  transition: ease-in-out 0.2s;
+  font-size: 23px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: rgb(162, 162, 162);
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.export-section{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}

@@ -1,0 +1,143 @@
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.excel-preview {
+    position: absolute;
+    top: 163px;
+    left: 0px;
+    height: 200px;
+    width: 100%;
+}
+
+.group-814 {
+    padding: 12px 127px 9px 23px;
+    box-sizing: border-box;
+    background-color: rgba(248, 248, 248, 1);
+    width: 100%;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .txt-943 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+    margin-right: 82px;
+  }
+  
+  .txt-433 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+    margin-right: 144px;
+  }
+  
+  .txt-610 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+    margin-right: 167px;
+  }
+  
+  .txt-246 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+  }
+  
+  .group-326 {
+    padding: 11px 132px 10px 23px;
+    box-sizing: border-box;
+    background-color: rgba(248, 248, 248, 1);
+    width: 100%;
+  }
+  
+  .txt-829 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+    margin-right: 72px;
+  }
+  
+  .txt-227 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+    margin-right: 236px;
+  }
+  
+  .txt-610 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+    margin-right: 167px;
+  }
+  
+  .txt-246 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+  }
+  
+  .group-349 {
+    padding: 10px 130px 11px 23px;
+    box-sizing: border-box;
+    background-color: rgba(231, 231, 231, 1);
+    width: 100%;
+  }
+  
+  .txt-623 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+    margin-right: 85px;
+  }
+  
+  .txt-5910 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+    margin-right: 351px;
+  }
+  
+  .txt-610 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+    margin-right: 167px;
+  }
+  
+  .txt-246 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    word-wrap: break-word;
+  }

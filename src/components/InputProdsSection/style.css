@@ -1,0 +1,17 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 65vh;
+    width: 90%;
+}
+
+.export-section{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}

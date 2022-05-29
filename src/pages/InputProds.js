@@ -1,10 +1,14 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
+import InputSection from "../components/InputProdsSection/InputProdsSection.js"
+import ExportBtn from "../components/ExportBtn/ExportBtn.js"
 
 const InputProds = () => {
   return (
     <>
-    <div>InputProds</div>
-    <p>This is fucking text</p>
+    <NavBar />
+    <InputSection />
+    <ExportBtn />
     </>
   )
 }
