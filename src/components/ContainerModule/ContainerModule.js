@@ -20,20 +20,22 @@ export default function ContainerModule(){
         <>
         <div className="container">
             <Header text={"Módluo Cliente"}/>
-            <SubHeader text={"Setpu"}/>
+            <SubHeader text={"Setup"}/>
             <TextInput text={"Autor"}/>
-            <div className="importar flex-row-vcenter">
+            <div className="importar23 flex-row-vcenter">
                 <div className="escolher-ficheiro flex-row-vcenter" onClick={() => {openFileSelector();sethide(s => !s);}}>
                 {hide ? <p className="txt-489">Escolher ficheiro</p> : filesContent.map((file)=>(<p className="txt-489">{file.name}</p>))}
                 </div>
                 <img src={add_green} alt="add_btn"></img>
             </div>
             
-            <div className="importar2 flex-row-apart ">
-            
+            <div className="importar2 ">
+                <p className="txt">Adicionar livros (4 max.)</p>
+                <div className="flex-row-apart" >
                 <input className="nostyle" type="text" placeholder="ISBN"></input>
                 <img src={add_black} alt="add_btn" className="black_btn"></img>
-
+                </div>
+                
             </div>
         </div>
         </>

@@ -2,9 +2,8 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    z-index: -10;
-    position: relative;
-    margin-top: 300px;
+    
+
   }
 
 .extras-vector1 {
@@ -16,8 +15,10 @@
     bottom: 0px;
     filter: drop-shadow(3px 5px 30px rgb(0 0 0 / 0.5));
     background-size: cover;
+    z-index: -15;
 
   }
+  
   .extras-vector2 {
     background: url(Vector6.svg);
     display: block;
@@ -27,6 +28,7 @@
     bottom: 0px;
     filter: drop-shadow(3px 5px 20px rgb(0 0 0 / 0.5));
     background-size:cover;
+    z-index: -10;
 
   }
 

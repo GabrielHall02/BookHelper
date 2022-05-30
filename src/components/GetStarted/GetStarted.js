@@ -5,10 +5,15 @@ import vector1 from "./Vector1.svg"
 import vector2 from "./Vector2.svg"
 import vector3 from "./Vector3.svg"
 import { Icon } from '@iconify/react';
+import { saveAs } from "file-saver";
 
 export default function GetStarted() {
   const [hide, sethide] = useState(true)
-
+  const saveFile = () => {
+    saveAs(
+      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+      "example.pdf"
+    );};
   
 
     return(
@@ -46,11 +51,11 @@ export default function GetStarted() {
           </Link>
         </div>
         <div className="frame-27 flex-row-vcenter-hcenter">
-          <Link to="test.txt" style={{ textDecoration: 'none' }} className="btn-m flex-row-vcenter" download="test.txt">
+          <div style={{ textDecoration: 'none' }} className="btn-m flex-row-vcenter" onClick={saveFile}>
             <p className="btn-txt">Exportar Template Docs</p>
             <Icon icon="akar-icons:arrow-right" color="white" width="30" height="30" />
-          </Link>
-          <div className="btn-m-1 flex-row-vcenter">
+          </div>
+          <div className="btn-m-1 flex-row-vcenter" onClick={saveFile}>
             <p className="btn-txt">Exportar Template Prods</p>
             <Icon icon="akar-icons:arrow-right" color="white" width="30" height="30" />
           </div>

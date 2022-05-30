@@ -26,7 +26,7 @@ p {
   }
   
   .property-1-default {
-    width: 1440px;
+    width: 100%;
     height: 680px;
     margin-top: -50px;
   }
@@ -76,8 +76,8 @@ p {
     display: flex;
     justify-content: space-between; 
     z-index: -10;
-    position: relative;
-    padding-top: 500px;
+    position: fixed;
+    bottom:0;
   }
   
   .home-vector1 {
@@ -92,7 +92,8 @@ p {
   }
   .home-vector3 {
     position: absolute;
-    right: 0px; bottom: 0px;
+    bottom: 0px;
+    right: 10%;
     z-index: -100;
     filter: drop-shadow(3px 5px 30px rgb(0 0 0 / 0.5));
   }
