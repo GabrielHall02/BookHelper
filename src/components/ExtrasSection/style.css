@@ -28,6 +28,121 @@
     justify-content: center;
   }
 
+  /* Excelpreview */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+p {
+  margin: 0;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.ExtraContainer{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+}
+
+
+
+.excel-previeww {
+  position: relative;
+  width: 492px;
+  height: 200px;
+}
+
+.rectangle-6 {
+  position: absolute;
+  top: 0%;
+  bottom: 75%;
+  left: 0%;
+  right: 0%;
+  background-color: rgba(248, 248, 248, 1);
+  height: 50px;
+  width: 100%;
+}
+
+.rectangle-8 {
+  position: absolute;
+  top: 50%;
+  bottom: 25%;
+  left: 0%;
+  right: 0%;
+  background-color: rgba(248, 248, 248, 1);
+  height: 50px;
+  width: 100%;
+}
+
+.rectangle-7 {
+  position: absolute;
+  top: 25%;
+  bottom: 50%;
+  left: 0%;
+  right: 0%;
+  background-color: rgba(231, 231, 231, 1);
+  height: 50px;
+  width: 100%;
+}
+
+.rectangle-9 {
+  position: absolute;
+  top: 75%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background-color: rgba(231, 231, 231, 1);
+  height: 50px;
+  width: 100%;
+}
+
+.editoras {
+  position: absolute;
+  top: 13px;
+  left: 27px;
+  width: 125px;
+  height: 174px;
+}
+
+.txt-483 {
+  font-size: 21px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+  margin-bottom: 22px;
+}
+
+.txt-837 {
+  font-size: 21px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+  margin-bottom: 23px;
+}
+
+.txt-957 {
+  font-size: 21px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+  margin-bottom: 22px;
+}
+
+.txt-202 {
+  font-size: 21px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+}
+
+
 
 
   
