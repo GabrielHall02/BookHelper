@@ -1,0 +1,115 @@
+.menuWrapper{
+    display: block;
+    z-index: 1000;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(-10px 0px 150px rgb(0,0,0));
+    width: 400px;
+    left:0;
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-left: 8%;
+    width: 100%;
+}
+
+.menu-item-wrapper{
+    margin-bottom: 10%;
+    width: 100%;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: ease-in 0.1s;
+}
+
+.menu-item-wrapper:hover{
+    background-color: rgba(35, 35, 35, 0.3);
+    transition: ease-in 0.1s;
+}
+
+.menu-item{
+  font-size: 22px;
+  font-family: Montserrat, sans-serif;
+  color: black;
+}
+
+.dropdown-text {
+    position: relative;
+    display: inline-block;
+    transition: ease-in 0.3s;
+  }
+  
+.dropdown-text-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-left: 12px;
+    padding-top: 12px;
+    z-index: 1;
+    transition: ease-in 0.3s;
+  }
+  
+.dropdown-text:hover .dropdown-text-content {
+    display: block;
+    transition: ease-in 0.3s;
+  }
+
+.m-top{
+    margin-top: 100px;
+}
+
+.dorpdown-item-wrapper{
+    margin-bottom: 2%;
+    width: 100%;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: ease-in 0.1s;
+}
+
+.dorpdown-item-wrapper:hover{
+    background-color: rgba(35, 35, 35, 0.3);
+    transition: ease-in 0.1s;
+}
+
+.menu-btn {
+    padding: 4px 20.4px;
+    box-sizing: border-box;
+    border-radius: 29.5px;
+    background-color: rgba(31, 183, 85, 1);
+    width: 105px;
+    height: 35px;
+    z-index: 50;
+    cursor: pointer;
+  }
+
+  .txt-666 {
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    word-wrap: break-word;
+  }
+
+.loc{
+    margin-left: 8%;
+    margin-top: 6%;
+}
+
+.menu-btn-mid{
+    padding: 4px 20.4px;
+    box-sizing: border-box;
+    border-radius: 29.5px;
+    background-color: rgba(31, 183, 85, 1);
+    width: 105px;
+    height: 35px;
+    z-index: 50;
+    cursor: pointer;
+    position: absolute;
+    right:50px;
+    top:14px;
+
+}
