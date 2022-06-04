@@ -1,0 +1,14 @@
+.text-input-S{
+    padding-left: 24px;
+    box-sizing: border-box;
+    border-radius: 48.5px;
+    background-color: rgba(240, 242, 239, 1);
+    line-height: 50px;
+    width: 539px;
+    font-size: 23px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: rgba(142, 142, 142, 1);
+    word-wrap: break-word;
+    border: none;
+}
