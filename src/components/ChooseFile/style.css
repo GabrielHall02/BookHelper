@@ -81,7 +81,7 @@ p {
   border-radius: 44px;
   background-color: rgba(255, 255, 255, 1);
   border: 4px solid rgba(31, 183, 85, 1);
-  height: fit-content;
+  height: 78px;
   width: 520px;
   cursor: pointer;
 }
@@ -110,14 +110,7 @@ p {
   word-wrap: break-word;
 }
 
-.botao-importar {
-  padding: 12px 23px 10px 24px;
-  box-sizing: border-box;
-  border-radius: 35px;
-  background-color: rgba(31, 183, 85, 1);
-  width: 164px;
-  height: 100%;
-}
+
 
 .txt-5107 {
   font-size: 24px;

@@ -45,10 +45,3 @@ p {
   word-wrap: break-word;
 }
 
-.export-sectionn{
-  width: 100%;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 3%;
-}

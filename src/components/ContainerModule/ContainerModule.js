@@ -6,6 +6,7 @@ import add_black from "./Add-btn-black.svg"
 import Header from "../Header1/Header1"
 import SubHeader from "../Subheader1/Subheader1"
 import TextInput from "../TextInputM/TextInputM"
+import { Icon } from '@iconify/react';
 
 export default function ContainerModule(){
     const [hide, sethide] = useState(true)
@@ -19,14 +20,14 @@ export default function ContainerModule(){
     return(
         <>
         <div className="container">
-            <Header text={"Módluo Cliente"}/>
+            <Header text={"Módulo Cliente"}/>
             <SubHeader text={"Setup"}/>
             <TextInput text={"Autor"}/>
             <div className="importar23 flex-row-vcenter">
                 <div className="escolher-ficheiro flex-row-vcenter" onClick={() => {openFileSelector();sethide(s => !s);}}>
                 {hide ? <p className="txt-489">Escolher ficheiro</p> : filesContent.map((file)=>(<p className="txt-489">{file.name}</p>))}
                 </div>
-                <img src={add_green} alt="add_btn"></img>
+                <img src={add_green} alt="add_btn" onClick={() => {openFileSelector();sethide(s => !s);}}></img>
             </div>
             
             <div className="importar2 ">
@@ -36,6 +37,9 @@ export default function ContainerModule(){
                 <img src={add_black} alt="add_btn" className="black_btn"></img>
                 </div>
                 
+            </div>
+            <div className="btn-m23 flex-row-apart" >
+                <p className="btn-txt-23">Upload</p>
             </div>
         </div>
         </>

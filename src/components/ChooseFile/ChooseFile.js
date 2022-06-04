@@ -24,9 +24,8 @@ export default function GetStarted() {
         <img src={add} alt="Not Found" className="vector-4" />
         {hide ? <p className="txt-489">Escolher ficheiro</p> : filesContent.map((file)=>(<p className="txt-489">{file.name}</p>))}
         </div>
-        <div className="botao-importar" onClick={() => {sethide2(s => !s);}}>
-          <p className="txt-5107">Importar</p>
-        </div>
+        
+        
       </div>
 
     <div className="excelContainer">

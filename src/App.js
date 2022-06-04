@@ -7,7 +7,6 @@ import InputProds from "./pages/InputProds"
 import Apuramento from "./pages/Apuramento"
 import ClientModule from "./pages/ClientModule"
 import Extras from "./pages/Extras"
-import DropDown from "./components/DropDown"
 
 
 function App() {

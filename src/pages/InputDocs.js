@@ -3,6 +3,8 @@ import NavBar from "../components/NavBar.js"
 import InputSection from "../components/InputSection/InputSection.js"
 import ExportBtn from "../components/ExportBtn/ExportBtn.js"
 import Header from '../components/Header1/Header1.js'
+import ImportBtn from '../components/ImportBtn/ImportBtn.js'
+import "./style.css"
 
 const InputDocs = () => {
   return (
@@ -11,7 +13,13 @@ const InputDocs = () => {
       <Header text={"Introduzir Documentos"}/>
       <div className="inputs-wrapper">
       <InputSection />
-      <ExportBtn />
+      
+      </div>
+      <div className="footer_section">
+      <div className='flex-col-center sp-between'>
+        <ImportBtn />
+      < ExportBtn />
+      </div>
       </div>
     </>
   )

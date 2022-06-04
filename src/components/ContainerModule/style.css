@@ -26,7 +26,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
+    justify-content: center;
+}
 
   .importar23{
     margin-top: 55px;
@@ -46,4 +47,29 @@
     width: 100%;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
+}
+
+
+
+.btn-m23{
+    transition: ease-in-out;
+    padding: 13px 41px 13px 30px;
+    margin-top: 55px;
+    box-sizing: border-box;
+    border-radius: 29.5px;
+    background-color: rgba(31, 183, 85, 1);
+    height: 59px;
+    width: 517px;
+    cursor: pointer;
+}
+
+
+.btn-txt-23{
+    font-size: 24px;
+font-family: Montserrat, sans-serif;
+font-weight: 500;
+color: rgba(255, 255, 255, 1);
+word-wrap: break-word;
+
+text-decoration: none;
 }

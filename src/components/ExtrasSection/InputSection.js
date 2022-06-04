@@ -1,6 +1,5 @@
-import React, {useState, Component} from "react"
+import React, {useState} from "react"
 import "./style.css"
-import TextInputM from "../TextInputM/TextInputM"
 import Header1 from "../Header1/Header1"
 import SubHeader1 from "../Subheader1/Subheader1"
 
@@ -21,22 +20,7 @@ export default function InputSection() {
         }
 
     };
-
-
     
-    const handleClick = event => {
-        event.preventDefault();
-        if (event.key === 'Enter') {
-            if (text=== "Leya") {
-                console.log('input value is NOT empty');
-              } else {
-                console.log('input value is empty');
-              }
-        }
-        
-      };
-    
-
     return(
 <>
 <div className="container">
@@ -45,7 +29,7 @@ export default function InputSection() {
         <SubHeader1 text={"Editoras de um fornecedor"} />
     </div>
         <div className="flex-col-center-vstart">
-            <input onChange={handleChange} className="text-input" type="text"></input>
+            <input onChange={handleChange} className="text-input" type="text" placeholder="Editora"></input>
         </div>
     
     {hide ? <div className="ExtraContainer">
