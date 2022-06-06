@@ -51,7 +51,7 @@ export default function GetStarted() {
           </Link>
         </div>
         <div className="frame-27 flex-row-vcenter-hcenter">
-          <div style={{ textDecoration: 'none' }} className="btn-m flex-row-vcenter" onClick={saveFile}>
+          <div className="btn-m flex-row-vcenter" onClick={saveFile}>
             <p className="btn-txt">Exportar Template Docs</p>
             <Icon icon="akar-icons:arrow-right" color="white" width="30" height="30" />
           </div>

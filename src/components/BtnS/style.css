@@ -1,4 +1,5 @@
 .btn-s {
+    transition: 0.3s ease-in-out;
     box-sizing: border-box;
     border-radius: 29.5px;
     background-color: rgba(31, 183, 85, 1);
@@ -18,3 +19,9 @@
     word-wrap: break-word;
     text-decoration: none;
   }
+
+.btn-s:hover{
+  transition: 0.3s ease-in-out;
+  width: 390px;
+
+}

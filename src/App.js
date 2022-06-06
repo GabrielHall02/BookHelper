@@ -10,6 +10,7 @@ import Extras from "./pages/Extras"
 
 
 function App() {
+  
   useEffect(() => {document.body.style.overflow = "hidden";}, []);
   return(
     

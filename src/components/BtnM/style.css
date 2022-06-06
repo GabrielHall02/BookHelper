@@ -1,0 +1,15 @@
+.btn-m {
+    transition: ease-in-out;
+    margin-right: 112px;
+    box-sizing: border-box;
+    border-radius: 29.5px;
+    background-color: rgba(31, 183, 85, 1);
+    height: 59px;
+    width: 430px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+

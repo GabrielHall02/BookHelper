@@ -3,18 +3,23 @@ import "./style.css"
 import { Link } from "react-router-dom"
 
 export default function Menu() {
-    const [hide, sethide] = useState(true)
+
+    const [isActive, setIsActive] = useState(false);
+    const handleClick = event => {
+        setIsActive(s => !s);
+        event.preventDefault();
+    };
 
     return(
         <>
-        {hide? <div className="menu-btn-mid" onClick={() => sethide(s => !s)}>
+        <div className='menu-btn-mid' onClick={handleClick} >
             <p className="txt-666">Menu</p>
-        </div>: null}
+        </div>
 
-        {!hide?
-        <div className="menuWrapper">
 
-            <div className="menu-btn loc" onClick={() => sethide(s => !s)}>
+        <div className={!isActive ? 'menuWrapper-hide' : 'menuWrapper'}>
+
+            <div className="menu-btn loc" onClick={handleClick} >
                 <p className="txt-666">Close</p>
             </div>
             
@@ -54,6 +59,6 @@ export default function Menu() {
 
                 
             </div>
-        </div>: null}
+        </div>
         </>
     )}
