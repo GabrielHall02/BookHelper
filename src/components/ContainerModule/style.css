@@ -3,10 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 580px !important;
+    justify-content: space-between;
 }
 
 .importar2{
-    margin-top: 55px;
+    display: none;
     width: 517px;
 }
 
@@ -30,7 +32,7 @@
 }
 
   .importar23{
-    margin-top: 55px;
+
     padding: 6px 6px 6px 34px;
   box-sizing: border-box;
   border-radius: 44px;
@@ -54,7 +56,7 @@
 .btn-m23{
     transition: ease-in-out;
     padding: 13px 41px 13px 30px;
-    margin-top: 55px;
+
     box-sizing: border-box;
     border-radius: 29.5px;
     background-color: rgba(31, 183, 85, 1);

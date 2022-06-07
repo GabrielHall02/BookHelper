@@ -1,14 +1,53 @@
-import React, {useState} from "react"
+import React, {useState, useRef, useEffect} from "react"
 import "./style.css"
 import { Link } from "react-router-dom"
 
 export default function Menu() {
 
     const [isActive, setIsActive] = useState(false);
-    const handleClick = event => {
-        setIsActive(s => !s);
+
+    
+
+    const useOutsideClick = (callback) => {
+        const ref = useRef();
+      
+        useEffect(() => {
+          const handleClick = (event) => {
+            if (ref.current && !ref.current.contains(event.target)) {
+                callback();
+            }
+          };
+      
+          document.addEventListener('click', handleClick);
+
+      
+          return () => {
+            document.removeEventListener('click', handleClick);
+          };
+        }, [ref]);
+      
+        return ref;
+      };
+
+      const handleClick = event => {
+        setIsActive(false);
         event.preventDefault();
     };
+
+      const handleClickOutside = () => {
+        console.log("clicked outside");
+        if (!isActive) {
+            setIsActive(s => !s);
+        }
+      };
+
+      const ref = useOutsideClick(handleClickOutside);
+
+
+    
+    
+
+    
 
     return(
         <>
@@ -17,7 +56,7 @@ export default function Menu() {
         </div>
 
 
-        <div className={!isActive ? 'menuWrapper-hide' : 'menuWrapper'}>
+        <div ref={ref} className={isActive ? 'menuWrapper' : 'menuWrapper-hide'}>
 
             <div className="menu-btn loc" onClick={handleClick} >
                 <p className="txt-666">Close</p>

@@ -3,12 +3,12 @@ import { useFilePicker } from 'use-file-picker';
 import "./style.css"
 import add from "./Add-btn.svg"
 import ExcelPreview from "../ExcelPreview/ExcelPreview.js"
-import SuccessTxt from "../SuccessTxt/SuccessTxt.js"
+
 
 
 export default function GetStarted() {
+
     const [hide, sethide] = useState(true)
-    const [hide2, sethide2] = useState(true)
     const [openFileSelector,{loading, filesContent}] = useFilePicker({
         accept: '.xlsx',
       });
@@ -31,9 +31,7 @@ export default function GetStarted() {
     <div className="excelContainer">
     {!hide ? <ExcelPreview /> : null}
     </div>
-      <div className="success-section">
-      {!hide2 ? <SuccessTxt text={"Importado com sucesso"} />: null}
-      </div>
+      
     </>
 
   )

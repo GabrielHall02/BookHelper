@@ -8,7 +8,7 @@
 
   .footer_section{
     width: 100%;
-    height: 130px;
+    height: 180px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -120,6 +120,14 @@
     display: none;
 }
 
+.move-up{
+  animation: fade-in-move-up 1.2s;
+}
+
+.move-right{
+  animation: fade-in-move-right 0.7s;
+}
+
 @keyframes fade-in-move-left {
     0% {
       opacity: 0;
@@ -224,3 +232,79 @@
 .dispNone {
     display: none;
   }
+
+.container-mid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vectors-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+
+  }
+
+.extras-vector1 {
+    animation: move-up-vector 0.6s;
+    position:absolute;
+    bottom: -50px;
+    filter: drop-shadow(3px 5px 30px rgb(0 0 0 / 0.5));
+    z-index: -15;
+
+  }
+
+  .extras-vector1-down {
+    transform: translateY(8rem);
+    transition: 0.5s ease-in-out;
+    position:absolute;
+    bottom: -150px;
+    filter: drop-shadow(3px 5px 30px rgb(0 0 0 / 0.5));
+    z-index: -15;
+
+  }
+
+  .extras-vector2-down {
+    transform: translateY(8rem);
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    bottom: -150px;
+    filter: drop-shadow(3px 5px 20px rgb(0 0 0 / 0.5));
+    z-index: -10;
+
+  }
+  
+  .extras-vector2 {
+    animation: move-up-vector 0.9s;
+    position: absolute;
+    bottom: -50px;
+    filter: drop-shadow(3px 5px 20px rgb(0 0 0 / 0.5));
+
+    z-index: -10;
+
+  }
+
+
+@keyframes move-down-vector{
+  0% {
+    opacity:1;
+  }
+  100% {
+    transform: translateY(100rem);
+  }
+}
+
+@keyframes move-up-vector{
+  0% {
+
+    transform: translateY(300rem);
+  }
+  100% {
+
+    transform: translateY(0px);
+  }
+}

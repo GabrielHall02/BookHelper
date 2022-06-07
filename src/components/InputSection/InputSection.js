@@ -5,7 +5,6 @@ import add from "./Add-btn.svg"
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import ExcelPreview from "../ExcelPreview/ExcelPreview.js"
-import SuccessTxt from "../SuccessTxt/SuccessTxt.js"
 
 
 export default function GetStarted() {
@@ -13,7 +12,6 @@ export default function GetStarted() {
     'Fatura', 'Guia de consignação'
   ];
   const [hide, sethide] = useState(true)
-    const [hide2, sethide2] = useState(true)
     const [openFileSelector,{loading, filesContent}] = useFilePicker({
         accept: '.xlsx',
       });
@@ -41,12 +39,6 @@ export default function GetStarted() {
     {!hide ?<div className="excelContainer">
      <ExcelPreview /> 
     </div>: null}
-      <div className="success-section">
-      {!hide2 ? <SuccessTxt text={"Importado com sucesso"} />: null}
-      </div>
-    
-
-
   
   </>
   )

@@ -16,9 +16,9 @@ const InputDocs = () => {
       
       </div>
       <div className="footer_section">
-      <div className='flex-col-center sp-between'>
+      <div className='flex-col-center sp-between move-up'>
         <ImportBtn />
-      < ExportBtn />
+        <ExportBtn />
       </div>
       </div>
     </>

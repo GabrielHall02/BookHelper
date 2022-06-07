@@ -20,3 +20,8 @@
     border: none;
   }
 
+
+.move-down{
+  animation: fade-in-move-down 0.9s;
+}
+

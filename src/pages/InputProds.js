@@ -15,7 +15,7 @@ const InputProds = () => {
     <InputSection />
 
     <div className='footer_section'>
-      <div className='flex-col-center sp-between'>
+      <div className='flex-col-center sp-between move-right'>
         <ImportBtn />
         <ExportBtn />
         </div>

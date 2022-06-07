@@ -5,6 +5,7 @@ export default function ExcelPreview() {
 
 return(
 <div className="excel-preview flex-col">
+    <p className="txt-246">Preview</p>
       <div className="group-814 flex-row">
         <p className="txt-4104">ISBN</p>
         <p className="txt-677">Title</p>

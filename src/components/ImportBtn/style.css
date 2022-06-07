@@ -2,22 +2,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
 .botao-importar {
+    outline: none;
+    border: none;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 22px;
+    background-color: rgba(31, 183, 85, 1);
+    color:white;
     box-sizing: border-box;
     border-radius: 35px;
-    background-color: rgba(31, 183, 85, 1);
     width: 420px;
     height: 59px;
     cursor: pointer;
-    display: flex;
-    align-items:center;
-    justify-content: center;
+    transition: all 0.25s ease;
+}
+.botao-importar:hover {
+  transition: all 0.25s ease;
+    background-color: white;
+    color: rgba(31, 183, 85, 1);
+    border: 3px solid rgba(31, 183, 85, 1);
+}
+.botao-importar:active {
+  transition: all 0.25s ease;
+  letter-spacing: 2px ;
+  background-color: white;
+}
+.botao-importar:after {
+  transition: all 0.25s ease;
+  content:"IMPORTAR";
+}
 
+.onclic{
+  outline: none;
+  border-radius: 35px;
+  background-color: #ffffff;
+  width: 59px;
+  height: 59px;
+  border-color: #dadada;
+  border-style:solid;
+  border-width:4px;
+  font-size:0;
+  border-left-color: #038c07;
+  animation: rotating 2s 0.25s linear infinite;
+  transition: all 0.25s ease;
+}
+.onclic:after {
+    content:"";
+    transition: all 0.25s ease;
+  }
+.onclic:hover {
+    color: rgba(31, 183, 85, 1);
+    background: white;
+    transition: all 0.25s ease;
+}
+
+.validate {
+    outline: none;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 35px;
+    border: 4px solid rgba(31, 183, 85, 1);
+    width: 420px;
+    height: 59px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+    background: rgba(31, 183, 85, 1);
+    transition: all 0.25s ease;
   
 }
 
-.btn-txt{
-    text-align: center;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
-    
+.validate:after {
+    content:"SUCCESS";
+
 }
+
+@keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+/*fade-in-move-up*/
+@keyframes fade-in-move-up {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
