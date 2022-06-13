@@ -2,6 +2,7 @@ import React, {useState, useRef, useEffect} from "react"
 import "./style.css"
 import { Link } from "react-router-dom"
 
+
 export default function Menu() {
 
     const [isActive, setIsActive] = useState(false);
@@ -30,14 +31,15 @@ export default function Menu() {
       };
 
       const handleClick = event => {
-        setIsActive(false);
+        setIsActive(!isActive);
         event.preventDefault();
     };
 
       const handleClickOutside = () => {
         console.log("clicked outside");
         if (!isActive) {
-            setIsActive(s => !s);
+            return;
+            // setIsActive(false);
         }
       };
 
@@ -72,14 +74,10 @@ export default function Menu() {
                 <div className="menu-item-wrapper">
                 <Link to='/Apuramento' style={{ textDecoration: 'none' }} className="menu-item">Apuramento de vendas</Link>
                 </div>
-                <div class="dropdown-text">
-                    <span className="menu-item">Extras </span>
-                    <div class="dropdown-text-content">
-                        <div className="menu-item-wrapper">
-                            <Link to='/Extras' style={{ textDecoration: 'none' }} className="menu-item">Editoras de um fornecedor</Link>
-                        </div>
-                    </div>
+                <div className="menu-item-wrapper">
+                    <Link to='/Extras' style={{ textDecoration: 'none' }} className="menu-item">Editoras de um fornecedor</Link>
                 </div>
+                
 
                 <div class="dropdown-text m-top" >
                     <span className="menu-item">Módulo Cliente</span>

@@ -42,7 +42,7 @@ export default function Apur_Section() {
             
             <TextInputM text={"Introduzir fornecedor"} />
             <div className="move-up">
-            <button className={state===1 ? "botao-exportar" : state===2 ? "onclic" : state === 3 ? "validate" : "botao-exportar"} id="button"
+            <button className={state===1 ? "botao-exportar" : state===2 ? "onclicc" : state === 3 ? "validatee" : "botao-exportar"} id="button"
              onClick={handleClick}>
             </button>
             </div>

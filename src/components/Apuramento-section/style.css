@@ -137,7 +137,7 @@ transition: all 0.25s ease;
 content:"EXPORTAR";
 }
 
-.onclic{
+.onclicc{
 outline: none;
 border-radius: 35px;
 background-color: #ffffff;
@@ -151,17 +151,17 @@ border-left-color: #038c07;
 animation: rotating 2s 0.25s linear infinite;
 transition: all 0.25s ease;
 }
-.onclic:after {
+.onclicc:after {
   content:"";
   transition: all 0.25s ease;
 }
-.onclic:hover {
+.onclicc:hover {
   color: rgba(31, 183, 85, 1);
   background: white;
   transition: all 0.25s ease;
 }
 
-.validate {
+.validatee {
   outline: none;
   text-align: center;
   box-sizing: border-box;
@@ -180,7 +180,7 @@ transition: all 0.25s ease;
 
 }
 
-.validate:after {
+.validatee:after {
   content:"SUCCESS";
 
 }

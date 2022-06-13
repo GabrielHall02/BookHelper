@@ -67,10 +67,10 @@ const Home = () => {
       </div>
       <div className='frame flex-row-vcenter-hspbetween'>
         <Link to="/Apuramento" style={{ textDecoration: 'none' }}>
-          <BtnM text="Apuramento" />
+          <BtnM text="Apuramento de Vendas" />
         </Link>
         <Link to="/Extras" style={{ textDecoration: 'none' }}>
-          <BtnM text="Extras" />
+          <BtnM text="Editoras de um fornecedor" />
         </Link>
       </div>
       <div className='frame flex-row-vcenter-hspbetween'>
