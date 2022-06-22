@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+.btn-m {
+    border: none;
+    padding: 2px 45px;
+    background-color: rgb(13,13,13);
+    border-radius: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+}
+
+.btn-text{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Montserrat, sans-serif;
+    z-index: 1000;
+}
